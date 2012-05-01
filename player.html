@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+<!-- Slightly modified by digitalirony, basically stripped all the stuff off of the page that wasn't just the player and CSS-->
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="description" content="Audioplayer from a new generation">
+	
+<link rel="stylesheet" href="/music/css/style.css" type="text/css" media="screen">
+	
+<!-- speakker relevant stuff starts here -->
+<link rel="stylesheet" href="/music/css/queries/netbooks-tablets.css" type="text/css" media="screen and (max-width: 1007px)" />
+<link rel="stylesheet" href="/music/css/speakker.css"  type="text/css" media="screen">
+<link rel="stylesheet" href="/music/css/mspeakker.css" type="text/css" media="screen">
+								
+<script type="text/javascript" src="/music/js/jquery.min.js"></script>
+<script type="text/javascript" src="/music/js/projekktor.min.js"></script>
+<script type="text/javascript" src="/music/speakker.min.js"></script>
+<!-- speakker relevant stuff ends here -->
+<!-- instantiate speakker, and pass the current path with JS to the php file-->
+<script type="text/javascript">
+$(document).ready(function() {
+	$().speakker({
+		file: '/music/playgen.php?path=' + window.location.pathname.substr(1),
+		playlist: true,
+		theme: 'dark'
+	});
+});
+</script>
+
+</head>
+</html>

@@ -1,0 +1,9 @@
+//Playgen brought to you by digitalirony
+//License: none, do what you want with this, I don't care. But would be nice if you give me credit
+
+This script is written to work with a music dump with directory listings enabled. That is mod_autoindex in apacahe, and the "Options +Indexes" directive set.
+To use this, is very simple. Just extract the contents of this archive into the Main directory containing your music dump, the player will then load on every page in your directory listing.
+Any directories that contain MP3's will get a playlist generated out of the MP3's automatically. Example:
+If your music is stored at Http://media.your-domain.com/, then copy all of these files into that directory(you may want to add something like "IndexIgnore music" to your .htaccess)
+Either change the file name of htaccess.changeme to be .htaccess or copy the contents to your current .htaccess file. Thats it, the rest will work out of the box!
+
